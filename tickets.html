@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Tickets & Registration | Morija Arts & Cultural Festival</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">MORIJA <span>FEST</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programme.html">Programme</a></li>
+      <li><a href="tickets.html" class="active">Tickets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- REPLACE: background-image: url('images/tickets-bg.jpg') -->
+  <header class="page-hero" style="background-image: url('mounatin.jpg');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="page-label">Join the Celebration</p>
+      <h1>Tickets &amp; Registration</h1>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <div class="container">
+      <h2 class="section-title">Choose Your Pass</h2>
+      <p class="section-desc">Select the ticket option that works best for you.</p>
+
+      <div class="ticket-grid">
+
+        <div class="ticket-card">
+          <div class="ticket-type">Day Pass</div>
+          <div class="ticket-price"><span class="ticket-currency">M</span>150</div>
+          <div class="ticket-period">per person / per day</div>
+          <ul class="ticket-features">
+            <li>Access for 1 selected day</li>
+            <li>Main stage performances</li>
+            <li>Craft market entry</li>
+            <li>Festival map &amp; programme</li>
+            <li>Food village access</li>
+          </ul>
+          <a href="#register" class="btn-primary">Register — Day Pass</a>
+        </div>
+
+        <div class="ticket-card featured">
+          <div class="ticket-badge">Best Value</div>
+          <div class="ticket-type">Weekend Pass</div>
+          <div class="ticket-price"><span class="ticket-currency">M</span>350</div>
+          <div class="ticket-period">per person / all 3 days</div>
+          <ul class="ticket-features">
+            <li>Access all 3 days</li>
+            <li>All performances &amp; stages</li>
+            <li>Priority seating (Main Stage)</li>
+            <li>Official festival T-shirt</li>
+            <li>Food village access</li>
+          </ul>
+          <a href="#register" class="btn-primary">Register — Weekend Pass</a>
+        </div>
+
+        <div class="ticket-card">
+          <div class="ticket-type">VIP Pass</div>
+          <div class="ticket-price"><span class="ticket-currency">M</span>700</div>
+          <div class="ticket-period">per person / all 3 days</div>
+          <ul class="ticket-features">
+            <li>All weekend pass benefits</li>
+            <li>VIP lounge access</li>
+            <li>Meet &amp; greet with performers</li>
+            <li>Complimentary meals (Day 1)</li>
+            <li>Backstage tour</li>
+          </ul>
+          <a href="#register" class="btn-primary">Register — VIP Pass</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section" id="register">
+    <div class="container">
+      <div class="form-card">
+        <h2>Registration Form</h2>
+        <p class="form-sub">Fill in your details to register for the 2026 Morija Festival.</p>
+
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="e.g. Moratuoa" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" name="lname" placeholder="e.g. Shoapho" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="e.g. moratuoashoapho10@gmail.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +266 57838590" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nationality">Nationality *</label>
+              <select id="nationality" name="nationality" required>
+                <option value="">-- Select --</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+                <option value="Other Africa">Other African Country</option>
+                <option value="International">International</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ticket-type">Ticket Type *</label>
+              <select id="ticket-type" name="ticket-type" required>
+                <option value="">-- Select Pass --</option>
+                <option value="day">Day Pass — M150</option>
+                <option value="weekend">Weekend Pass — M350</option>
+                <option value="vip">VIP Pass — M700</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="num-tickets">Number of Tickets *</label>
+              <select id="num-tickets" name="num-tickets" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5 or more</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="day-select">Day (Day Pass only)</label>
+              <select id="day-select" name="day-select">
+                <option value="">-- N/A for Weekend/VIP --</option>
+                <option value="day1">Day 1 — Sat 3 Oct</option>
+                <option value="day2">Day 2 — Sun 4 Oct</option>
+                <option value="day3">Day 3 — Mon 5 Oct</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="dietary">Dietary Requirements / Special Needs</label>
+            <textarea id="dietary" name="dietary" placeholder="Let us know if you have any special requirements..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>
+              <input type="checkbox" required style="width:auto;margin-right:8px;" />
+              I agree to the Terms and Conditions of the Morija Festival 2026.
+            </label>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn-primary" style="width:100%;padding:1rem;">Submit Registration</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy;2026 My Web Page. All Rights Reserved by Moratuoa</p>
+    <p>Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+  </footer>
+
+</body>
+</html>
